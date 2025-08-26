@@ -35,15 +35,15 @@ const About: React.FC<AboutProps> = ({ data }) => {
   ];
 
   const experiences = [
-    { year: '2023-Present', role: 'Senior Full Stack Developer', company: 'Tech Solutions Inc.' },
-    { year: '2022-2023', role: 'Frontend Developer', company: 'Digital Agency' },
-    { year: '2021-2022', role: 'Junior Developer', company: 'StartUp Hub' }
+    { year: '2025-Present', role: 'Senior DevOps Engineer', company: 'Azany Inc.' },
+    { year: '2025-Present', role: 'DevSecOps Engineer', company: 'Deta Softwares' },
+    { year: '2022-2024', role: 'Junior DevOps Engineer', company: 'Deta Softwares' }
   ];
 
   const achievements = [
-    { title: 'Best Developer Award', year: '2023', description: 'Outstanding performance in full-stack development' },
-    { title: 'Security Certification', year: '2022', description: 'Certified Ethical Hacker (CEH)' },
-    { title: 'Open Source Contributor', year: '2021', description: 'Active contributor to major React projects' }
+    { title: 'Generative AI for business leaders', year: '2025', description: 'Usage of Generative AI for Leaders in Business' },
+    { title: 'AWS Certified Cloud Practitioner', year: '2025', description: 'Certified AWS cloud Practitioner' },
+    { title: 'Open Source Contributor', year: '2021', description: 'Active contributor to Kubernetes projects' }
   ];
 
   return (
@@ -86,10 +86,10 @@ const About: React.FC<AboutProps> = ({ data }) => {
                 </p>
                 
                 <p className="text-lg">
-                  My passion lies in creating <span className="text-[#22c825] font-semibold">seamless digital experiences</span> 
-                  that solve real-world problems. I believe in writing clean, maintainable code and staying updated 
-                  with the latest technologies.
-                </p>
+                 My passion lies in building <span className="text-[#22c825] font-semibold">reliable and scalable infrastructures</span> that empower teams to deliver software faster and with confidence. I focus on automation, cloud-native solutions, 
+                 and staying ahead with the latest DevOps practices to drive business value.
+               </p>
+
               </div>
             </div>
 
@@ -98,13 +98,13 @@ const About: React.FC<AboutProps> = ({ data }) => {
               <div className="bg-gradient-to-br from-[#22c825]/20 to-[#22c825]/5 p-6 rounded-2xl border border-[#22c825]/30 hover:border-[#22c825]/50 transition-all duration-300 group">
                 <Zap className="h-8 w-8 text-[#22c825] mb-3 group-hover:scale-110 transition-transform duration-300" />
                 <h4 className="text-xl font-bold text-[#c9c1c0] mb-2">Fast Learner</h4>
-                <p className="text-gray-400 text-sm">Quick to adapt to new technologies and frameworks</p>
+                <p className="text-gray-400 text-sm">Quick to adapt to new technologies and tools</p>
               </div>
               
               <div className="bg-gradient-to-br from-purple-500/20 to-purple-500/5 p-6 rounded-2xl border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 group">
                 <Code className="h-8 w-8 text-purple-400 mb-3 group-hover:scale-110 transition-transform duration-300" />
-                <h4 className="text-xl font-bold text-[#c9c1c0] mb-2">Clean Code</h4>
-                <p className="text-gray-400 text-sm">Writing maintainable and scalable solutions</p>
+                <h4 className="text-xl font-bold text-[#c9c1c0] mb-2">Clean Infrastructure</h4>
+                <p className="text-gray-400 text-sm">Designing and Automating Systems for Scalability,Growth,Resilience and Reliability</p>
               </div>
             </div>
           </div>

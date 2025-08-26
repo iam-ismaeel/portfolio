@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Code2, Home, User, Briefcase, FolderOpen, Mail, Volume2, VolumeX } from 'lucide-react';
+import { Menu, X, Code2, Home, User, Briefcase, FolderOpen, Mail, Volume2, VolumeX, Server } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +14,9 @@ const Navbar: React.FC = () => {
   // Initialize audio on component mount
   useEffect(() => {
     // Create audio element
-    audioRef.current = new Audio('/onmyway.mp3');
-    audioRef.current.preload = 'auto';
-    audioRef.current.volume = 0.5; // Set volume to 50%
+    //audioRef.current = new Audio('/onmyway.mp3');
+   // audioRef.current.preload = 'auto';
+    //audioRef.current.volume = 0.5; // Set volume to 50%
     
     // Play promise handling for browsers that require user interaction
     const playPromise = () => {
@@ -139,14 +139,15 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2 sm:space-x-3 group cursor-pointer">
             <div className="relative">
-              <Code2 className="h-8 w-8 sm:h-10 sm:w-10 text-[#22c825] group-hover:rotate-12 transition-transform duration-300" />
+            <Server className="h-8 w-8 sm:h-10 sm:w-10 text-[#22c825] group-hover:rotate-12 transition-transform duration-300" />
+
               <div className="absolute -top-1 -right-1 w-2 h-2 sm:w-3 sm:h-3 bg-[#22c825] rounded-full animate-pulse"></div>
             </div>
             <div className="hidden sm:block">
               <span className="text-[#22c825] font-mono text-xl sm:text-2xl font-bold tracking-wider">
-                &lt; Rohit_hcr2 /&gt;
+              Ismail Kasali
               </span>
-              <div className="text-xs text-gray-400 font-mono">Full Stack Developer</div>
+              <div className="text-xs text-gray-400 font-mono">DevOps Engineer</div>
             </div>
           </div>
 

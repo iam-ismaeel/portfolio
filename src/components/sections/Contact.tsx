@@ -11,8 +11,8 @@ const Contact: React.FC<ContactProps> = ({ data }) => {
     { icon: MessageCircle, url: data.contact.whatsapp, label: 'WhatsApp', color: 'hover:text-green-400' },
     { icon: Mail, url: data.contact.email, label: 'Email', color: 'hover:text-blue-400' },
     { icon: Github, url: data.contact.github, label: 'GitHub', color: 'hover:text-gray-300' },
-    { icon: Youtube, url: data.contact.youtube, label: 'YouTube', color: 'hover:text-red-400' },
-    { icon: Instagram, url: data.contact.instagram, label: 'Instagram', color: 'hover:text-pink-400' },
+  /*{ icon: Youtube, url: data.contact.youtube, label: 'YouTube', color: 'hover:text-red-400' },
+    { icon: Instagram, url: data.contact.instagram, label: 'Instagram', color: 'hover:text-pink-400' },  */
   ];
 
   return (
@@ -24,14 +24,14 @@ const Contact: React.FC<ContactProps> = ({ data }) => {
           </h2>
           <div className="w-16 sm:w-20 md:w-24 h-1 bg-[#22c825] mx-auto"></div>
           <p className="text-[#c9c1c0] mt-4 sm:mt-6 text-base sm:text-lg max-w-2xl mx-auto px-2">
-            I'm open for opportunities and collaborations!
+          Passionate about building reliable systems — open to collaborations and new challenges.
           </p>
         </div>
 
         <div className="bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-[#22c825]/20">
           <div className="text-center space-y-6 sm:space-y-8">
             <p className="text-base sm:text-lg md:text-xl text-[#c9c1c0] leading-relaxed">
-              Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+            Ready to scale your infrastructure? Let’s discuss how I can help automate, optimize, and secure your systems.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6">

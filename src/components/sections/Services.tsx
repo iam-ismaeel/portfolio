@@ -1,15 +1,16 @@
 import React from 'react';
-import { Globe, Smartphone, Shield, DivideIcon as LucideIcon } from 'lucide-react';
+import { Cloud, Shield, TrendingUp, Activity,DivideIcon as LucideIcon} from 'lucide-react';
 import { PortfolioData } from '../../types';
 
 interface ServicesProps {
   data: PortfolioData;
 }
 
-const iconMap: Record<string, LucideIcon> = {
-  Globe,
-  Smartphone,
+const iconMap: Record<string, typeof LucideIcon> = {
+  Cloud,
   Shield,
+  TrendingUp,
+  Activity
 };
 
 const Services: React.FC<ServicesProps> = ({ data }) => {
@@ -28,7 +29,7 @@ const Services: React.FC<ServicesProps> = ({ data }) => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {data.services.map((service, index) => {
-            const IconComponent = iconMap[service.icon] || Globe;
+            const IconComponent = iconMap[service.icon] || Cloud;
             return (
               <div
                 key={service.id}

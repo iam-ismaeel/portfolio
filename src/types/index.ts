@@ -20,7 +20,7 @@ export interface Project {
   title: string;
   techStack: string[];
   description: string;
-  link: string;
+ // link: string;
   github?: string; // Optional GitHub repository URL
 }
 
@@ -28,6 +28,6 @@ export interface ContactInfo {
   whatsapp: string;
   email: string;
   github: string;
-  youtube: string;
-  instagram: string;
+ // youtube: string;
+ // instagram: string;
 }

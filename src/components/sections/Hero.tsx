@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, Download, Play, Sparkles, Code, Shield, Smartphone, Zap } from 'lucide-react';
-import myImages from '../../assets/images/medium-1750698796.jpg';
+import { Infinity as DevOpsLoop,ChevronDown, Download, Play, Sparkles, Cloud, Shield, Zap } from 'lucide-react';
+import myImages from '../../assets/images/Firefly 20250817184555.png';
 import { motion } from 'framer-motion';
 
 // Particle Background Component
@@ -50,9 +50,9 @@ const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   
   const taglines = [
-    { text: "Full Stack Developer", icon: <Code className="inline-block mr-2" />, color: "text-[#22c825]" },
-    { text: "Mobile App Creator", icon: <Smartphone className="inline-block mr-2" />, color: "text-blue-400" },
-    { text: "Security Expert", icon: <Shield className="inline-block mr-2" />, color: "text-purple-400" },
+    { text: "DevOps Engineer", icon: <DevOpsLoop className="inline-block mr-2" />, color: "text-[#22c825]" },
+    { text: "Cloud Infrastructure Engineer", icon: <Cloud className="inline-block mr-2" />, color: "text-blue-400" },
+    { text: "DevSecOps Engineer", icon: <Shield className="inline-block mr-2" />, color: "text-purple-400" },
     { text: "Problem Solver", icon: <Zap className="inline-block mr-2" />, color: "text-yellow-400" }
   ];
 
@@ -159,7 +159,7 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white">
-              Hi, I'm <span className="text-[#22c825]">Rohit</span>
+              Hi, I'm <span className="text-[#22c825]">Ismail</span>
             </h1>
             
             <div className="h-12 md:h-16 flex items-center justify-center">
@@ -177,7 +177,7 @@ const Hero: React.FC = () => {
             </div>
             
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-              Crafting exceptional digital experiences with clean, efficient code and innovative solutions.
+             Empowering teams by automating workflows, optimizing cloud infrastructure, and ensuring reliable deployments.
             </p>
           </motion.div>
 
@@ -199,7 +199,7 @@ const Hero: React.FC = () => {
             </motion.button>
             
             <motion.a
-              href="/resume.pdf"
+              href="/ISMAIL KASALI-1.pdf"
               download
               className="px-8 py-3 bg-white/10 text-white rounded-full font-medium border border-white/20 flex items-center gap-2 group hover:bg-white/20 transition-colors"
               whileHover={{ scale: 1.05 }}
