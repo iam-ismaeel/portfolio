@@ -7,11 +7,11 @@ export const initialPortfolioData: PortfolioData = {
       "Kubernetes", "Terraform/Terragrunt", "AWS", "Docker", "Ansible",
       "Python", "Linux Administration", "MongoDB",
       "Git", "Bash", "CI/CD",
-     "Owasp", "Trivy", "Sonarqube",
-      "Github Actions", "Jenkins", "GitOps",
-      "ELK", "Prometheus", "Grafana" , "Jaeger" , "Mysql" , "Helm Charts" , "Kustomize"
+      "Owasp", "Trivy", "Sonarqube",
+      "Github Actions", "Jenkins", "GitOps", "Open-Telemetry", "Datadog",
+      "ELK", "Prometheus", "Grafana", "Jaeger", "Mysql", "Helm Charts", "Kustomize"
     ]
-    
+
   },
   services: [
     {
@@ -33,14 +33,14 @@ export const initialPortfolioData: PortfolioData = {
       icon: "TrendingUp"
     }
   ],
-  
+
   projects: [
     {
       id: "project-1",
-      title: "3-Tier AWS Cloud Infrastructure with Terragrunt",
-      techStack: ["Terraform", "Terragrunt", "AWS VPC", "EC2", "RDS", "ALB"],
-      description: "Provisioned a production-grade 3-tier architecture (VPC, public/private subnets, ALB, EC2 Auto Scaling, and RDS) using Terraform modules managed with Terragrunt. Designed for reusability and environment separation (dev, staging, prod).",
-      github: "https://github.com/yourusername/aws-3tier-terragrunt"
+      title: "Enterprise-Grade Loan Validation System with Full GitOps & AWS Infrastructure",
+      techStack: ["☁️  AWS Ecosystem: EKS • ECR • VPC • IAM • Secrets Manager", "📦  Containerization: Docker • Kubernetes", "🚀  CI/CD: GitHub Actions • ArgoCD • Trivy", "🔐  Security: RBAC • ESO • OIDC • Network Policies", "📊  Observability: OpenTelemetry • Datadog", "🖥️  Development: Go • Nginx • Cert-Manager", "🌐  Networking: NLB • VPC • NAT • Route 53", "📝  IaC: Terraform • Terragrunt • GitOps"],
+      description: "Designed and implemented a production-ready, cloud-native government loan validation system demonstrating full-stack DevOps expertise. The platform features a Go-based microservices architecture deployed on AWS EKS with Infrastructure as Code using Terragrunt. Implemented GitOps workflows with ArgoCD, automated security scanning with Trivy, and established comprehensive observability using OpenTelemetry and Datadog. The solution includes multi-environment management (staging/production), zero-trust security practices, and automated disaster recovery capabilities.",
+      github: "https://github.com/iam-ismaeel/End-to-End-Deployment-of-a-Loan-App-with-Observability.git"
     },
     {
       id: "project-2",
@@ -72,22 +72,22 @@ export const initialPortfolioData: PortfolioData = {
     },
     {
       id: "project-6",
-      title: "Secure Infrastructure with AWS IAM & Networking",
-      techStack: ["AWS IAM", "VPC", "Security Groups", "Terraform"],
-      description: "Implemented least-privilege IAM policies, secured VPC design, and hardened networking using NACLs, SGs, and private subnets. Automated provisioning with Terraform for repeatable deployments.",
-      github: "https://github.com/yourusername/aws-security-infra"
+      title: "End-to-End CI/CD for Full-Stack E-Commerce on AWS",
+      techStack: ["🚀  CI/CD: Github Action • CodeDeploy", "Web Server: Nginx", "Processes Manager: PM2 • PHP-FPM ", "☁️  AWS Ecosystem: EC2 • RDS • VPC • IAM • S3 • CloudWatch • WorkMail • SES", "📊  Monitoring: CloudWatch ", "🖥️  Development: Laravel • Nextjs", "🌐  Networking: ALB • VPC • Route 53"],
+      description: "An end-to-end DevOps project showcasing automated build, test, and deployment of a Next.js frontend and Laravel backend using GitHub Actions and AWS CodeDeploy. Focused on secure environment management, cloud infrastructure integration, and production-grade deployment practices.",
+      github: "https://github.com/iam-ismaeel/Automatic-fullstack-app-deployment-.git"
     }
   ],
-  
+
 
   contact: {
     whatsapp: "https://wa.me/+2348063170102",
     email: "mailto:kasaliismail2@gmail.com",
     github: "https://github.com/iam-ismaeel",
-   // youtube: "https://www.youtube.com/@codewithrohit2927",
-  //  instagram: "https://instagram.com/rohit.env"
+    // youtube: "https://www.youtube.com/@codewithrohit2927",
+    //  instagram: "https://instagram.com/rohit.env"
   },
-  
+
 };
 
 // Simple storage functions
@@ -99,3 +99,4 @@ export const getPortfolioData = (): PortfolioData => {
 export const savePortfolioData = (data: PortfolioData): void => {
   localStorage.setItem('portfolioData', JSON.stringify(data));
 };
+
