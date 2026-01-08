@@ -198,7 +198,7 @@ const Hero: React.FC = () => {
             </motion.button>
 
             <motion.a
-              href="/ISMAIL KASALI-1.pdf"
+              href="/ismailkasali(2).pdf"
               download
               className="px-8 py-3 bg-white/10 text-white rounded-full font-medium border border-white/20 flex items-center gap-2 group hover:bg-white/20 transition-colors"
               whileHover={{ scale: 1.05 }}
