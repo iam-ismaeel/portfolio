@@ -44,10 +44,10 @@ export const initialPortfolioData: PortfolioData = {
     },
     {
       id: "project-2",
-      title: "E-Commerce Microservices on AWS EKS",
-      techStack: ["Kubernetes", "AWS EKS", "Helm", "Docker", "Nginx Ingress"],
-      description: "Containerized and deployed an e-commerce platform (frontend: Next.js, backend: Laravel, Kafka messaging) to AWS EKS. Configured Ingress with NLB for routing, autoscaling, and zero-downtime deployments.",
-      github: "https://github.com/yourusername/eks-ecommerce"
+      title: "End-to-End CI/CD for Full-Stack E-Commerce on AWS",
+      techStack: ["🚀  CI/CD: Github Action • CodeDeploy", "Web Server: Nginx", "Processes Manager: PM2 • PHP-FPM ", "☁️  AWS Ecosystem: EC2 • RDS • VPC • IAM • S3 • CloudWatch • WorkMail • SES", "📊  Monitoring: CloudWatch ", "🖥️  Development: Laravel • Nextjs", "🌐  Networking: ALB • VPC • Route 53"],
+      description: "An end-to-end DevOps project showcasing automated build, test, and deployment of a Next.js frontend and Laravel backend using GitHub Actions and AWS CodeDeploy. Focused on secure environment management, cloud infrastructure integration, and production-grade deployment practices.",
+      github: "https://github.com/iam-ismaeel/Automatic-fullstack-app-deployment-.git"
     },
     {
       id: "project-3",
